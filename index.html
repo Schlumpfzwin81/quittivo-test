@@ -237,7 +237,8 @@ const REMIND_DAYS=30;
 // the archive are never limited: a correction or access to one's own records must never be blocked.
 const FREE_INVOICES=5,PRO_PRODUCT='quittivo_pro';
 // Shown in "Hilfe & Kontakt"; the mail opens in the user's own mail app, nothing is sent by Quittivo itself.
-const APP_VERSION='0.1.0',SUPPORT_EMAIL='';
+// support@quittivo.com only receives mail once the domain quittivo.com and a mailbox exist (to do before release).
+const APP_VERSION='0.1.0',SUPPORT_EMAIL='support@quittivo.com';
 // Saved services/products (db.catalog) that can be inserted into documents with one tap.
 function catalogItem(i){return{id:uid(),description:String(i.description||'').trim(),price:Number(i.price)||0,tax:Number(i.tax)||0}}
 const issuedAtOf=d=>d.issuedAt??d.createdAt??(d.date+'T12:00:00Z');
